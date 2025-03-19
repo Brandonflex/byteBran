@@ -1,0 +1,24 @@
+{
+  "name": "bytebran",
+  "version": "1.0.0",
+  "description": "A sample e-commerce project",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --port 3000",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "author": "Daino Otieno",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.0.11",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.2.2"
+  },
+  "dependencies": {
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

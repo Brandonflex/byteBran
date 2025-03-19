@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Code</title>
+    <link rel="stylesheet" href="/src/styles.css"> <!-- Update the path to your CSS file -->
+</head>
+<body>
+
+    <div id="root"></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 0-6.88 2.77L12 12l6.88-7.23A10 10 0 0 0 12 2Z"></path><path d="M12 2a10 10 0 0 1 6.88 2.77L12 12 5.12 4.77A10 10 0 0 1 12 2Z"></path><path d="M2 12h20"></path></svg>
+                <span>ByteBran</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#courts">Court Services</a></li>
+                <li><button class="cart-btn">Cart (0)</button></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Elevate Your Game</h1>
+                    <p>Premium basketball equipment and professional court services</p>
+                    <div class="cta-buttons">
+                        <a href="#shop" class="btn primary">Shop Equipment</a>
+                        <a href="#courts" class="btn secondary">Book a Court</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slide-track"></div>
+                </div>
+            </div>
+
+            <div class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="product-grid"></div>
+            </div>
+
+            <div class="about-section">
+                <h2>Why Choose ByteBran?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/><path d="m12 2 4 4"/><path d="m12 2-4 4"/><path d="m12 22-4-4"/><path d="m12 22 4-4"/><path d="m2 12 4 4"/><path d="m2 12 4-4"/><path d="m22 12-4 4"/><path d="m22 12-4-4"/></svg>
+                        <h3>Premium Quality</h3>
+                        <p>Hand-selected equipment from top manufacturers</p>
+                    </div>
+                    <div class="feature">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+                        <h3>Pro Standards</h3>
+                        <p>Court facilities meeting international standards</p>
+                    </div>
+                    <div class="feature">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        <h3>Community Focus</h3>
+                        <p>Building basketball communities since 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="shop" class="section">
+            <h2>Basketball Equipment</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="balls">Balls</button>
+                <button class="filter-btn" data-category="shoes">Shoes</button>
+                <button class="filter-btn" data-category="accessories">Accessories</button>
+            </div>
+            <div class="product-grid shop-grid"></div>
+        </section>
+
+       
+        <section id="courts" class="section">
+            <h2>Court Services</h2>
+            <div class="courts-grid">
+                <div class="court-info">
+                    <h3>Professional Courts</h3>
+                    <div class="court-features">
+                        <div class="court-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 8v8"/><path d="m8.5 12 7-4"/><path d="m8.5 12 7 4"/><path d="M12 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/><path d="M12 17a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/><path d="M8.5 12a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/><path d="M15.5 12a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/></svg>
+                            <span>Regulation Size</span>
+                        </div>
+                        <div class="court-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/><path d="m12 2 4 4"/><path d="m12 2-4 4"/><path d="m12 22-4-4"/><path d="m12 22 4-4"/><path d="m2 12 4 4"/><path d="m2 12 4-4"/><path d="m22 12-4 4"/><path d="m22 12-4-4"/></svg>
+                            <span>Pro Lighting</span>
+                        </div>
+                        <div class="court-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-3 0-4.6-1.4-4.6-1.4"/><path d="M16.6 7c0-1.3.2-2.4-1.4-3.5C13.7 2.4 12.8 2 12 2s-1.7.4-3.2 1.5C7.2 4.6 7.4 5.7 7.4 7"/><path d="M12 7v14"/><path d="M8 21h8"/></svg>
+                            <span>Premium Flooring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="booking-form" class="booking-form">
+                    <h3>Book a Court</h3>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" required>
+                            <option value="">Select time slot</option>
+                            <option value="morning">Morning (8AM - 12PM)</option>
+                            <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                            <option value="evening">Evening (4PM - 8PM)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (hours)</label>
+                        <input type="number" id="duration" min="1" max="4" value="1" required>
+                    </div>
+                    <button type="submit" class="btn primary">Book Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 0-6.88 2.77L12 12l6.88-7.23A10 10 0 0 0 12 2Z"></path><path d="M12 2a10 10 0 0 1 6.88 2.77L12 12 5.12 4.77A10 10 0 0 1 12 2Z"></path><path d="M2 12h20"></path></svg>
+                    <span>ByteBran</span>
+                </div>
+                <p>Elevating the game since 2005</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#courts">Court Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: brandonflex108@gmail.com</p>
+                <p>Phone: (+254) 769 8800 59 </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ByteBran. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.tsx"></script> <!-- Update the path to your JavaScript file -->
+</body>
+</html>
